@@ -1,0 +1,57 @@
+11:37 AM 7/26/2024
+==========================
+Android App Icon Change
+==========================
+
+This solution are from net sources, but I do it in simple way.
+Ready a logo with 128x128 or 256x256 or 512x512. jpg or png. 
+And follow icon-change snapshots provided in this folder.
+
+================================================================
+Bellow things are not necessary.
+
+To change the app icon in Android Studio, you'll need to replace the default launcher icons with your custom icons. Here's a step-by-step guide:
+
+1. Prepare Your Icon Assets
+Ensure your icon images are ready in different resolutions to support various screen densities:
+
+mdpi (48x48 pixels)
+hdpi (72x72 pixels)
+xhdpi (96x96 pixels)
+xxhdpi (144x144 pixels)
+xxxhdpi (192x192 pixels)
+
+2. Open the Project in Android Studio
+Open your project in Android Studio.
+Navigate to the res folder in the Project view, typically located under app/src/main/res.
+
+3. Using Image Asset Studio
+Right-click the res folder and go to New > Image Asset.
+In the Asset Type dropdown, select Launcher Icons (Adaptive and Legacy).
+In the Path section, click on the folder icon and select your custom image file.
+Configure the icon type, background, and other settings as needed.
+Click Next and then Finish.
+Android Studio will generate the necessary icon files and update the mipmap- folders accordingly.
+
+4. Verify the Changes
+Open the AndroidManifest.xml file located in app/src/main/.
+Ensure the <application> tag has the correct android:icon attribute pointing to the updated icon, usually like this:
+xml
+Copy code
+<application
+    android:icon="@mipmap/ic_launcher"
+    ...>
+Run your app on an emulator or physical device to verify the icon change.
+
+5. Check for Adaptive Icons
+If your app supports Android 8.0 (API level 26) or higher, you can also configure adaptive icons. This involves specifying a foreground and background layer.
+
+Adaptive icons consist of two layers: a foreground and a background.
+The foreground can be an image, while the background can be a color or another image.
+For more customization, you can manually edit the ic_launcher.xml files located in the res/mipmap-anydpi directory.
+
+6. Rebuild and Test
+After making these changes, clean and rebuild your project to ensure that the new icons are applied correctly. You can clean and rebuild your project by selecting Build > Clean Project and then Build > Rebuild Project from the top menu.
+
+
+

@@ -1,0 +1,49 @@
+HOW I COMMAND & CMD DO
+=============================================
+Microsoft Windows [Version 10.0.22631.2861]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\rony0\AndroidStudioProjects>cordova create MyInfo info.androidabcd.myinfo MyInfo
+Creating a new cordova project.
+
+C:\Users\rony0\AndroidStudioProjects>cd myinfo
+
+C:\Users\rony0\AndroidStudioProjects\MyInfo>cordova platform add android@latest
+Using cordova-fetch for cordova-android@latest
+Adding android project...
+Creating Cordova project for the Android platform:
+        Path: platforms\android
+        Package: info.androidabcd.myinfo
+        Name: MyInfo
+        Activity: MainActivity
+        Android Target SDK: android-34
+        Android Compile SDK: 34
+Subproject Path: CordovaLib
+Subproject Path: app
+Android project created with cordova-android@13.0.0
+
+C:\Users\rony0\AndroidStudioProjects\MyInfo>cordova prepare
+
+C:\Users\rony0\AndroidStudioProjects\MyInfo>cordova build android
+Checking Java JDK and Android SDK versions
+ANDROID_HOME=D:\Android-Studio\SDK (recommended setting)
+ANDROID_SDK_ROOT=D:\Android-Studio\SDK (DEPRECATED)
+Using Android SDK: D:\Android-Studio\SDK
+Starting a Gradle Daemon, 3 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+BUILD SUCCESSFUL in 25s
+1 actionable task: 1 executed
+Subproject Path: CordovaLib
+Subproject Path: app
+Starting a Gradle Daemon, 3 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Task :CordovaLib:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+BUILD SUCCESSFUL in 31s
+50 actionable tasks: 50 executed
+Built the following apk(s):
+        C:\Users\rony0\AndroidStudioProjects\MyInfo\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+
+C:\Users\rony0\AndroidStudioProjects\MyInfo>
