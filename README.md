@@ -38,7 +38,7 @@ Step 3: Prepare the Cordova project <br>
 Step 4: Build Cordova Project <br>
 <pre>cordova build android</pre>
 
-BUILD SUCCESSFUL--APK built (In CMD)
+Build Successful--APK built (In CMD)
 
 <b>Build/Import With Android Studio Procesure:</b> <br>
 1. Select Project MyInfo > platform > android
@@ -60,8 +60,11 @@ Project should be build after that.
 
 <b>Cordova config file:</b> <br>
 Cordova app manifesto file (like config.xml in Android Studio)  <br>
-location: node_modules> cordova_android> framework> cdv-gradle-config-defaults.json <br>
+location: node_modules\cordova_android\framework\cdv-gradle-config-defaults.json <br>
 If build have problem with SDK image not found, then see SDK version from manifesto & download in SDK manager. <br>
 Check snapshot. <br>
+
+<b>APK build file location:</b> <br>
+MyInfo\platforms\android\app\build\outputs\apk\debug
 
 Done.
