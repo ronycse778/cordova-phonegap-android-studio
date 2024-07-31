@@ -67,4 +67,7 @@ Check snapshot. <br>
 <b>APK build file location:</b> <br>
 MyInfo\platforms\android\app\build\outputs\apk\debug
 
+<b>To use this repository:</b> <br>
+Unzip node_modules.zip and platforms.zip file
+
 Done.
