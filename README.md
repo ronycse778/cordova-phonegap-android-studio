@@ -34,6 +34,9 @@ Step 2: Add the Android platform <br>
 
 Step 3: Prepare the Cordova project <br>
 <pre>cordova prepare</pre>
+If cordova prepare show problem (ex. app import from outside), then remove and re-add the Android platform
+<pre>cordova platform remove android <br>
+cordova platform add android</pre>
 
 Step 4: Build Cordova Project <br>
 <pre>cordova build android</pre>
