@@ -67,6 +67,9 @@ location: node_modules\cordova_android\framework\cdv-gradle-config-defaults.json
 If build have problem with SDK image not found, then see SDK version from manifesto & download in SDK manager. <br>
 Check snapshot. <br>
 
+<b>If AVD start problem:</b> <br>
+Check snapshot from Data.Source/SDK-Config. <br>
+
 <b>APK build file location:</b> <br>
 MyInfo\platforms\android\app\build\outputs\apk\debug
 
